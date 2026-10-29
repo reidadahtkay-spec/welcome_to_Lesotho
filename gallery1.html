@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A photo gallery inspired by Lesotho's landscapes and outdoor adventures.">
+    <title>Gallery | Explore Lesotho</title>
+    <link rel="stylesheet" href="Lesotho.css">
+    <script src="Script.js"></script>
+</head>
+<body>
+        <nav>
+            <a  href="Lesotho.html">Explore Lesotho</a>
+            <a href="About1.html">About</a>
+            <a href="destinations1.html">Destinations</a>
+            <a href="gallery1.html">Gallery</a>
+            <a href="contacts1.html">Contact</a>
+        </nav>
+     <header class="page-hero" style="--page-image:url('c:\Users\MaJoR Tech\Documents\Lesotho_Tourism_Website-1\Lesotho_Tourism_Website\lijo.jpg')">
+            <div class="container">
+                <p class="eyebrow">Little moments, big views</p>
+                <h1>Postcards from<br><em>the outdoors.</em></h1>
+                <p>Explore the landscapes that make a journey memorable.</p>
+            </div>
+        </header>
+            <main>
+                <section class="section-space">
+                    <div class="container">
+                        <div class="section-heading mb-4">
+                            <p class="eyebrow text-accent">Photo gallery</p>
+                            <h2 class="section-title">Take a closer look.</h2>
+                            <p class="lead-copy">Select any photograph to open a larger preview. These are illustrative landscape images; replace them with your own Lesotho photographs for a more locally accurate project.</p>
+                        </div>
+                        <div class="container-wrapper">
+                            <div class="gallery-grid" id="galleryGrid">
+                                <div class="container">
+                                <button class="gallery-tile tile-tall" data-full="qhanolla.jpg" data-caption="A 5 star place for you and your family"><img src="qhanolla.jpg" alt="A 5 star place for you and your family"><span>lounges</span></button>
+                                <button class="gallery-tile" data-full="lipere.jpg" data-caption="A trail through the open landscape"><img src="lipere.jpg" alt="A trail through the open landscape"><span>Open trails</span></button>
+                                </div>
+
+                                <div class="container">
+                                <button class="gallery-tile" data-full="mabita.jpg" data-caption="A place to rest and refresh your mind"><img src="mabita.jpg" alt="A place to rest and refresh your mind"><span>Quiet places</span></button>
+                                <button class="gallery-tile" data-full="mnicas.jpg" data-caption="Stop here for resting in Leribe"><img src="mnicas.jpg" alt="Stop here for resting in Leribe"><span>On the trail</span></button>
+                                </div>
+
+                                <div class="container">
+                                <button class="gallery-tile" data-full="cultural.jpg" data-caption="Sunlight and a peaceful forest"><img src="cultural.jpg" alt="Sunlight and a peaceful forest"><span>Slow moments</span></button>
+                                <button class="gallery-tile" data-full="shoalane.jpg" data-caption="A dramatic mountain silhouette at night"><img src="shoalane.jpg" alt="A dramatic mountain silhouette at night"><span>Night skies</span></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                        <div class="d-flex justify-content-center gap-2 mt-4">
+                            <button class="btn btn-outline-dark" id="galleryPrevious">Previous</button>
+                            <span class="gallery-counter align-self-center" id="galleryCounter">1 / 6</span>
+                            <button class="btn btn-dark" id="galleryNext">Next</button>
+                        </div>
+                    </div>
+                </section>
+            </main>
+            <data class="modal fade" id="galleryModal" tabindex="-1" aria-labelledby="galleryModalTitle" aria-hidden="true">
+                <div class="modal-dialog modal-xl modal-dialog-centered">
+                    <div class="modal-content gallery-modal-content">
+                        <div class="modal-header border-0">
+                            <h2 class="modal-title fs-5" id="galleryModalTitle">Gallery preview</h2>
+                            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body text-center pt-0">
+                            <img id="modalGalleryImage" src="" alt="" class="img-fluid rounded">
+                            <p id="modalGalleryCaption" class="text-white mt-3 mb-0"></p>
+                            <div class="d-flex justify-content-center gap-2 mt-3">
+                                <button class="btn btn-outline-light" id="modalPrevious">Previous</button>
+                                <button class="btn btn-light" id="modalNext">Next</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </data>
+
+    </body>
+</html>
+        
+
+        

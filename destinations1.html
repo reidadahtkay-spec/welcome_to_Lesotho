@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore the Lesotho's best destinations and outdoor experiences.">
+    <title>Destinations | Explore Lesotho</title>
+    <link rel="stylesheet" href="Lesotho.css">
+    <script src="Script.js"></script>
+</head>
+<body>
+    <nav>
+            <a href="Lesotho.html">Explore Lesotho</a>
+            <a href="About1.html">About</a>
+            <a href="destinations1.html">Destinations</a>
+            <a href="gallery1.html">Gallery</a>
+            <a href="contacts1.html">Contact</a>
+    </nav>
+    <header class="page-hero" style="--page-image:url('c:\Users\MaJoR Tech\Documents\Lesotho_Tourism_Website-1\Lesotho_Tourism_Website\lipere.jpg')">
+        <div class="container">
+            <p class="eyebrow">Choose your adventure</p>
+            <h1>Find your next<br><em>favourite place.</em></h1>
+            <p>From dramatic highlands to quiet stops along the road.</p>
+        </div>
+    </header>
+    <main>
+        <section class="section-space">
+            <div class="container">
+                <div class="d-flex flex-column flex-md-row justify-content-between align-items-md-end gap-3 mb-4">
+                    <div>
+                        <p class="eyebrow text-accent">A few ideas to begin with</p>
+                        <h2 class="section-title">Explore by interest.</h2>
+                    </div>
+                    <div class="filter-group" role="group" aria-label="Filter destinations">
+                        <button class="btn btn-filter active" data-filter="all">All places</button>
+                        <button class="btn btn-filter" data-filter="nature">Nature</button>
+                        <button class="btn btn-filter" data-filter="culture">Culture</button>
+                        <button class="btn btn-filter" data-filter="adventure">Adventure</button>
+                    </div>
+                </div>
+                <div class="container-wrapper">
+                <div class="row g-4" id="destinationGrid">
+                    <div class="col-md-6 col-lg-4 destination-item" data-category="nature adventure">
+                        <article class="destination-card h-100">
+                            <img src="mohale.jpg" alt="Rocky mountain peaks">
+                            <div class="card-body-custom">
+                                <span class="badge rounded-pill text-bg-success mb-2">Nature</span>
+                                <h3>Maloti Highlands</h3>
+                                <p>Open views, crisp air and mountain scenery for travellers who love the outdoors.</p>
+                                <button class="btn btn-outline-dark btn-sm details-btn" data-place="Maloti Highlands" data-description="Plan ahead for mountain weather, road conditions and daylight. Consider a local guide for unfamiliar trails.">Travel note</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 destination-item" data-category="adventure nature">
+                        <article class="destination-card h-100">
+                            <img src="maletsunyane.jpg" alt="Open valley and hiking trail">
+                            <div class="card-body-custom">
+                                <span class="badge rounded-pill text-bg-warning mb-2">Adventure</span>
+                                <h3>Water falls</h3>
+                                <p>Make time for a guided walk, a scenic drive or a relaxed picnic in nature.</p>
+                                <button class="btn btn-outline-dark btn-sm details-btn" data-place="Water falls" data-description="Choose a route that matches your fitness, tell someone your plans and carry water, warm layers and a charged phone.">Travel note</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 destination-item" data-category="culture">
+                        <article class="destination-card h-100">
+                            <img src="lijo.jpg" alt="Rural landscape with trees and hills">
+                            <div class="card-body-custom">
+                                <span class="badge rounded-pill text-bg-primary mb-2">Food</span>
+                                <h3>Village visits</h3>
+                                <p>Discover local cooking, everyday life and the warmth of community hospitality.</p>
+                                <button class="btn btn-outline-dark btn-sm details-btn" data-place="Village visits" data-description="Ask permission before photographing people or homes, respect private property and support local sellers fairly.">Travel note</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 destination-item" data-category="nature">
+                        <article class="destination-card h-100">
+                            <img src="mediterranean.jpg" alt="Mountain lake and hills">
+                            <div class="card-body-custom">
+                                <span class="badge rounded-pill text-bg-success mb-2">Nature</span>
+                                <h3>Quiet viewpoints</h3>
+                                <p>Stop safely, take in the view and give yourself a break from the busy schedule at Mapholaneng.</p>
+                                <button class="btn btn-outline-dark btn-sm details-btn" data-place="Quiet viewpoints" data-description="Only stop where it is safe and legal to pull over. Avoid walking close to steep edges and leave the area clean.">Travel note</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 destination-item" data-category="adventure">
+                        <article class="destination-card h-100">
+                            <img src="motebo.jpg" alt="Hikers walking along a mountain path">
+                            <div class="card-body-custom">
+                                <span class="badge rounded-pill text-bg-warning mb-2">Adventure</span>
+                                <h3>Guided hikes</h3>
+                                <p>Learn about the landscape from people who know the local routes.</p>
+                                <button class="btn btn-outline-dark btn-sm details-btn" data-place="Guided hikes" data-description="Confirm guide experience, route difficulty, fees and equipment before setting out. Weather can change quickly at altitude.">Travel note</button>
+                            </div>
+                        </article>
+                    </div>
+                    <div class="col-md-6 col-lg-4 destination-item" data-category="culture nature">
+                        <article class="destination-card h-100">
+                            <img src="mokorotlo.jpg" alt="Sunlit countryside landscape">
+                            <div class="card-body-custom">
+                                <span class="badge rounded-pill text-bg-primary mb-2">Culture &amp; nature</span>
+                                <h3>Basotho culture</h3>
+                                <p>Take your time, and evaluate the best hats crafted in our very own country.</p>
+                                <button class="btn btn-outline-dark btn-sm details-btn" data-place="Basotho culture" data-description="Respect local customs and traditions when visiting communities. Engage with locals to learn about their way of life.">Travel note</button>
+                            </div>
+                        </article>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </section>
+        <section class="quote-band">
+            <div class="container">
+                <p class="eyebrow">Ready to go?</p>
+                <blockquote>Good journeys begin with a little curiosity and a thoughtful plan.</blockquote>
+                <a href="contacts1.html" class="btn btn-outline-light">Ask us a question</a>
+            </div>
+        </section>
+    </main>
+     <data class="modal fade" id="destinationModal" tabindex="-1" aria-labelledby="destinationModalTitle" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="destinationModalTitle">Travel note</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body" id="destinationModalBody"></div>
+                    <div class="modal-footer">
+                        <button class="btn btn-dark" data-bs-dismiss="modal">Got it</button>
+                    </div>
+                </div>
+            </div>
+            <footer class="site-footer">
+                <div class="container">
+                    <p>&copy; 2023 Your Company. All rights reserved.</p>
+                </div>
+            </footer>
